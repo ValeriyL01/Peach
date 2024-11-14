@@ -1,0 +1,23 @@
+.description {
+  margin-top: 82px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: #b01736;
+  }
+  &__text {
+    font-size: 3.2rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 38.4px;
+    max-width: 1110px;
+    margin-bottom: 0px;
+  }
+}
