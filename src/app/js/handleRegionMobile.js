@@ -1,10 +1,4 @@
-import './style.scss';
-
-import './normalize.scss';
-
-import renderApp from './app/app';
-
-document.addEventListener('DOMContentLoaded', () => {
+export function handleRegionMobile() {
   const regionItems = document.querySelectorAll('.regions__item');
 
   regionItems.forEach((item) => {
@@ -18,5 +12,4 @@ document.addEventListener('DOMContentLoaded', () => {
       item.classList.toggle('active-mobile');
     });
   });
-});
-renderApp();
+}

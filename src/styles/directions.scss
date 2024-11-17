@@ -85,17 +85,23 @@
     height: 100%;
     transform: translateY(0);
   }
-
-  @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+  .directions {
+    margin-top: 50px;
+    &__container {
+      gap: 10px;
+    }
     &__item {
       height: 60px;
-      width: 100%;
+      width: 95%;
     }
     &__item--active {
       height: 240px;
     }
     &__title {
       font-size: 2.8rem;
+      margin-bottom: 15px;
     }
 
     &__item-background {
@@ -126,6 +132,10 @@
       transform: rotate(180deg);
     }
     .directions__container .directions__item:nth-child(5) .directions__item-title {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .directions__container .directions__item:nth-child(6) .directions__item-title {
       margin-top: 10px;
       margin-bottom: 20px;
     }

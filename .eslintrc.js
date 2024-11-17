@@ -28,5 +28,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'max-lines-per-function': ['error', 100],
     'no-param-reassign': 'off',
+    'import/no-unresolved': 'off',
   },
 };
