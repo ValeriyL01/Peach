@@ -1,5 +1,9 @@
 .description {
   margin-top: 82px;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 1s;
 
   &__wrapper {
     display: flex;
@@ -43,5 +47,16 @@
 @media (max-width: 768px) {
   .description {
     margin-top: 27px;
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

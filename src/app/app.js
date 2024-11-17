@@ -8,6 +8,7 @@ import { mapSvg } from './js/mapSvg';
 export default function renderApp() {
   const mapElement = document.querySelector('.map__map');
   mapElement.innerHTML = mapSvg;
+  document.querySelector('.description').classList.add('show');
   handleRegionClick();
   toggleСities();
   toggleDirectionItems();
